@@ -8,10 +8,10 @@ module.exports = function(grunt) {
     uglify: {
       dev: {
         options: {
-          mangle: true,
+          mangle: false,//true,
           beautify: false,
-          compress: true,
-          preserveComments: false
+          compress: false,//true,
+          preserveComments: true//false
         },
         files: {
           'js/main.js': 'js/*/*.js'

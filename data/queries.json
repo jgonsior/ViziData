@@ -1,11 +1,11 @@
 {
     "tile_width": 10,
-    "id": "humans",
-    "label": "humans",
+    "id": "queries",
+    "label": "queries",
     "datasets": [
         {
             "min": -7999,
-            "file": "humans_d00.json",
+            "file": "queries_d00.json",
             "strings": {
                 "timelineToolTip": "%l in %x: %v",
                 "zprop": "Year",
@@ -20,7 +20,7 @@
         },
         {
             "min": -3300,
-            "file": "humans_d01.json",
+            "file": "queries_d01.json",
             "strings": {
                 "timelineToolTip": "%l in %x: %v",
                 "zprop": "Year",
@@ -34,6 +34,6 @@
             "id": "birth"
         }
     ],
-    "title": "Humans",
-    "properties": "humans_p.json"
+    "title": "Queries",
+    "properties": "queries_p.json"
 }
