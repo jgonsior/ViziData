@@ -12,3 +12,5 @@ svg.css
 .DS_Store
 Thumbs.db
 .directory
+data/queries_*.json
+data/*.tsv

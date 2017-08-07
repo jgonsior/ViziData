@@ -5,33 +5,18 @@
     "datasets": [
         {
             "min": -7999,
-            "file": "queries_d00.json",
+            "file": "queries_user.json",
             "strings": {
                 "timelineToolTip": "%l in %x: %v",
-                "zprop": "Year",
-                "term": "between %l and %h",
-                "label": "deaths",
-                "desc": "Place and time of death"
+                "zprop": "Count",
+                "term": "zwischen %l und %h",
+                "label": "bots",
+                "desc": "Amount of queries"
             },
             "max": 2015,
             "maxEventCount": 4129,
             "options": { "initSelection": { "min": 1700, "max": 2015 } },
-            "id": "death"
-        },
-        {
-            "min": -3300,
-            "file": "queries_d01.json",
-            "strings": {
-                "timelineToolTip": "%l in %x: %v",
-                "zprop": "Year",
-                "term": "between %l and %h",
-                "label": "births",
-                "desc": "Place and time of birth"
-            },
-            "max": 2098,
-            "maxEventCount": 6765,
-            "options": { "initSelection": { "min": 1700, "max": 2015 } },
-            "id": "birth"
+            "id": "bots"
         }
     ],
     "title": "Queries",
