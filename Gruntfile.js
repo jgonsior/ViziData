@@ -18,6 +18,25 @@ module.exports = function(grunt) {
         }
       }
     },
+
+    includeFiles: {
+      options: {
+        basePath: '',
+        baseUrl: '',
+        templates: {
+          html: {
+            js: '<script src="{filePath}"></script>'
+          }
+        }
+      },
+      myTarget: {
+        files: {
+          'index.html' : 'index.tpl'
+        }
+      }
+    },
+
+
     ////////////
     // COMPASS
     compass: {
@@ -45,10 +64,14 @@ module.exports = function(grunt) {
         files: 'sass/*.scss',
         tasks: ['compass','autoprefixer:screen']
       },
-      uglify: {
+      includeFiles : {
+        files: 'js/modular/*.js',
+        tasks: ['includeFiles']
+      }
+     /* uglify: {
         files: 'js/modular/*.js',
         tasks: ['uglify']
-      }
+      }*/
     }
   });
 
@@ -57,8 +80,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-include-files')
 
   // Default task(s).
-  grunt.registerTask('default', ['watch']);
+  grunt.registerTask('default', ['includeFiles', 'watch']);
 
 };
