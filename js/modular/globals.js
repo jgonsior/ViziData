@@ -49,7 +49,7 @@ var DATA_DIR = "./data/",
 	META_FILES = ["humans.json", "queries.json"]; // available datagroups
 
 var DEFAULT_DATAGROUP = 'queries', // default datagroup 
-	DEFAULT_DATASET = 1,	// dataset to load up initially
+	DEFAULT_DATASET = 0,	// dataset to load up initially
 	DEFAULT_LABELLANG = 'en';// default language for item labels
 
 var	//ARR_UNDEFINED = null,	// undefined value

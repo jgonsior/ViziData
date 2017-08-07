@@ -5,7 +5,7 @@
     "datasets": [
         {
             "min": -7999,
-            "file": "queries_user.json",
+            "file": "queries_bots.json",
             "strings": {
                 "timelineToolTip": "%l in %x: %v",
                 "zprop": "Count",
