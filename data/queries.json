@@ -17,7 +17,53 @@
             "maxEventCount": 4129,
             "options": { "initSelection": { "min": 1, "max": 30 } },
             "id": "bots"
+        },
+        {
+            "min": -5,
+            "file": "queries_all.json",
+            "strings": {
+                "timelineToolTip": "%l in %x: %v",
+                "zprop": "Count",
+                "term": "zwischen %l und %h",
+                "label": "All",
+                "desc": "Amount of queries"
+            },
+            "max": 45,
+            "maxEventCount": 4129,
+            "options": { "initSelection": { "min": 1, "max": 30 } },
+            "id": "bots"
+        },
+        {
+            "min": -5,
+            "file": "queries_unknown.json",
+            "strings": {
+                "timelineToolTip": "%l in %x: %v",
+                "zprop": "Count",
+                "term": "zwischen %l und %h",
+                "label": "unknown",
+                "desc": "Amount of queries"
+            },
+            "max": 45,
+            "maxEventCount": 4129,
+            "options": { "initSelection": { "min": 1, "max": 30 } },
+            "id": "bots"
+        },
+        {
+            "min": -5,
+            "file": "queries_user.json",
+            "strings": {
+                "timelineToolTip": "%l in %x: %v",
+                "zprop": "Count",
+                "term": "zwischen %l und %h",
+                "label": "user",
+                "desc": "Amount of queries"
+            },
+            "max": 45,
+            "maxEventCount": 4129,
+            "options": { "initSelection": { "min": 1, "max": 30 } },
+            "id": "bots"
         }
+
     ],
     "title": "Queries",
     "properties": "queries_p.json"
