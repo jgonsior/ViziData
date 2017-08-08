@@ -4,7 +4,7 @@
     "label": "queries",
     "datasets": [
         {
-            "min": -7999,
+            "min": -5,
             "file": "queries_bots.json",
             "strings": {
                 "timelineToolTip": "%l in %x: %v",
@@ -13,9 +13,9 @@
                 "label": "bots",
                 "desc": "Amount of queries"
             },
-            "max": 2015,
+            "max": 45,
             "maxEventCount": 4129,
-            "options": { "initSelection": { "min": 1700, "max": 2015 } },
+            "options": { "initSelection": { "min": 1, "max": 30 } },
             "id": "bots"
         }
     ],
